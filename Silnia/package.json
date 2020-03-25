@@ -1,0 +1,15 @@
+{
+  "name": "silnia",
+  "version": "1.0.0",
+  "description": "liczymy silnie",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "redis": "3.0.2"
+  },
+  "author": "glonpl",
+  "license": "ISC"
+}
