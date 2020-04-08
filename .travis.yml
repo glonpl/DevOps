@@ -1,0 +1,10 @@
+sudo: required
+ 
+services: 
+  - docker
+ 
+before_install:
+  - docker build -t glonpl/dockerreacttravis -f 03_travisci/Dockerfile.dev 02-react-app/.
+ 
+script:
+  - docker run -e CI=true glonpl/dockerreacttravis yarn test
